@@ -93,7 +93,7 @@ class ExtractSubstitution(Transformer):
     double_quoted_template = template
 
 
-grammar_file = os.path.join(get_package_share_directory('launch'), 'frontend', 'grammar.lark')
+grammar_file = 'external/ros2_launch/launch/share/launch/frontend/grammar.lark'
 parser = Lark.open(grammar_file, start='template')
 transformer = ExtractSubstitution()
 
